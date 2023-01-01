@@ -1,0 +1,166 @@
+body{
+    margin: auto;
+    width: 70%;
+    text-rendering: optimizeLegibility;
+	font-weight: initial;
+}
+
+.light {
+	background: #f3f5f7;
+}
+
+
+.projcard-bar {
+	left: -2px;
+	width: 50px;
+	height: 5px;
+	margin: 10px 0;
+	border-radius: 5px;
+	background-color: #424242;
+	transition: width 0.2s ease;
+}
+
+.my-image{
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+}
+
+.article-author-image{
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+}
+
+.author-name{
+    display: inline-flex;
+   
+}
+
+
+.more-link{
+    margin-top: -0.5rem;    
+    display: block;
+    max-width: 150px;
+    
+}
+
+.article-image{
+    border-radius: 5%;
+}
+
+.author-info{
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+.general-info{
+    display: inline-block;
+    margin: 4rem;
+}
+.job-description{
+    color: grey;
+}
+.SM-link{
+    color: #000;
+    margin:0.25rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.SM-link:hover{
+    color: rgb(49, 123, 207);
+}
+
+.link{
+    text-decoration: none;
+}
+
+.link:hover{
+    font-weight: bold;
+    color: rgb(61, 156, 16);
+}
+
+.row{
+    margin-bottom: 3rem;
+}
+.navbar{
+    background-color: #fff;
+    opacity: 90%;
+    border-bottom: rgb(102, 98, 98) solid;
+    margin-bottom: 50px;
+}
+
+.main-item, .article-author{
+    display: flex;
+    align-items: center;
+}
+
+.article-author{
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: 2rem;
+}
+
+.btn-main-section{
+    margin-right: 20px;
+}
+.main{
+    padding: 70px 0;
+}
+.footer{
+    text-align: center;
+    color: rgb(99, 102, 104);
+    padding: 2rem;
+}
+
+/*for article card*/
+
+.card-horizontal {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+
+.projcard-tagbox {
+	position: absolute;
+	bottom: 3%;
+	font-size: 14px;
+	cursor: default;
+	user-select: none;
+	pointer-events: none;
+    right: 0;
+}
+.projcard-tag {
+	display: inline-block;
+	background: #E0E0E0;
+	color: #777;
+	border-radius: 3px 0 0 3px;
+	line-height: 26px;
+	padding: 0 10px 0 23px;
+	position: relative;
+	margin-right: 20px;
+	cursor: default;
+	user-select: none;
+	transition: color 0.2s;
+}
+.projcard-tag::before {
+	content: '';
+	position: absolute;
+	background: #fff;
+	border-radius: 10px;
+	box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+	height: 6px;
+	left: 10px;
+	width: 6px;
+	top: 10px;
+}
+.projcard-tag::after {
+	content: '';
+	position: absolute;
+	border-bottom: 13px solid transparent;
+	border-left: 10px solid #E0E0E0;
+	border-top: 13px solid transparent;
+	right: -10px;
+	top: 0;
+}
