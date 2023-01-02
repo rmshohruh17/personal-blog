@@ -20,6 +20,10 @@ body{
 	transition: width 0.2s ease;
 }
 
+.navbar-brand{
+    color:#1490de;
+}
+
 .my-image{
     border-radius: 100%;
     width: 150px;
@@ -47,6 +51,10 @@ body{
 
 .article-image{
     border-radius: 5%;
+}
+
+.navbar-brand:hover{
+    color: #06639d;
 }
 
 .author-info{
@@ -77,18 +85,21 @@ body{
 }
 
 .link:hover{
-    font-weight: bold;
     color: rgb(61, 156, 16);
 }
 
 .row{
     margin-bottom: 3rem;
 }
-.navbar{
+.navbar, .navbar-academy{
     background-color: #fff;
     opacity: 90%;
     border-bottom: rgb(102, 98, 98) solid;
     margin-bottom: 50px;
+}
+
+.navbar-academy{
+    border-bottom: rgb(8, 119, 163) solid;
 }
 
 .main-item, .article-author{
@@ -108,28 +119,48 @@ body{
 .main{
     padding: 70px 0;
 }
-.footer{
+.footer, .blog-footer{
+    border-top: rgb(6, 144, 198) solid;
     text-align: center;
     color: rgb(99, 102, 104);
     padding: 2rem;
 }
 
+.blog-footer{
+    border-top: none;
+}
+
 /*for article card*/
+
+.card{
+    margin-bottom: 1.5rem;
+}
 
 .card-horizontal {
     display: flex;
     flex: 1 1 auto;
 }
 
+.heading-divider{
+    border: none;
+    border-bottom:0.5rem dotted #777 ;
+    width: 40%;
+    margin: 1.5rem auto;
+}
+
+.video-container{
+    text-align: center;
+}
 
 .projcard-tagbox {
 	position: absolute;
-	bottom: 3%;
+	right: 0;
+    bottom: 3%;
 	font-size: 14px;
 	cursor: default;
 	user-select: none;
 	pointer-events: none;
-    right: 0;
+    
 }
 .projcard-tag {
 	display: inline-block;
@@ -164,3 +195,7 @@ body{
 	right: -10px;
 	top: 0;
 }
+
+/* Css codes for searchbar*/
+
+ 
